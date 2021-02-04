@@ -4,7 +4,8 @@
    "private": true,
    "license": "MIT",
    "scripts": {
-      "test": "jest --coverage"
+      "test": "jest --coverage",
+      "test:ci": "jest --json --outputFile=result.json --testLocationInResults"
    },
    "devDependencies": {
       "jest": "^26.6.3"

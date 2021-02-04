@@ -10,4 +10,8 @@ jobs:
            with:
               node-version: '14.15.4'
          - run: yarn install
-         - run: yarn test
+         - run: yarn test:ci
+         - uses: tanmen/jest-reporter@v1
+           if: always()
+           with:
+              github-token: ${{ secrets.GITHUB_TOKEN }}
