@@ -4,7 +4,8 @@
    "private": true,
    "license": "MIT",
    "scripts": {
-      "test": "jest --coverage"
+      "test": "jest --coverage --watch",
+      "test:ci": "jest --ci --reporters='default' --reporters='./github-actions-reporter'"
    },
    "devDependencies": {
       "jest": "^26.6.3"
