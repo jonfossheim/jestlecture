@@ -6,3 +6,7 @@ module.exports = {
       return a + b + c;
    },
 };
+
+const sum4 = (a, b, c, d) => {
+   return a + b + c + d;
+};
